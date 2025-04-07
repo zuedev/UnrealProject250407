@@ -106,7 +106,7 @@ if ($dockerInstalled -and $dockerRunning -and $dockerImageExists) {
     # Define the command arguments for clarity
     $projectFile = "/project/${projectName}.uproject"
     $archiveDir = "/project/Packaged"
-    $uatScript = "/home/ue5/UnrealEngine/Engine/Build/BatchFiles/RunUAT.sh"
+    $uatScript = "/home/ue4/UnrealEngine/Engine/Build/BatchFiles/RunUAT.sh"
 
     # Construct the command to run inside the container
     $commandInContainer = "$uatScript BuildCookRun -utf8output -platform=Linux -clientconfig=Shipping -serverconfig=Shipping -project=$projectFile -noP4 -nodebuginfo -allmaps -cook -build -stage -prereqs -pak -archive -archivedirectory=$archiveDir"
