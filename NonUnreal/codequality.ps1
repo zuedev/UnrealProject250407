@@ -7,8 +7,7 @@ This script performs the following steps:
 1. Checks if Docker is installed.
 2. Checks if the Docker daemon is running.
 3. Pulls or verifies the existence of the required Unreal Engine Docker image.
-4. If all checks pass, it runs the Unreal Engine Automation Tool (UAT) within the Docker container
-   to perform code quality checks (BuildCookRun).
+4. If all checks pass, it runs the Unreal Engine Automation Tool (UAT) within the Docker container to perform code quality checks (BuildCookRun).
 5. Reports success or failure at each step and overall.
 #>
 
